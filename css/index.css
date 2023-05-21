@@ -1,0 +1,621 @@
+/*Alterações Gerais*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josef Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Nav - Menu*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: .4s;
+}
+
+.btn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 18px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: solid #ffffff 2px;
+    font-weight: bold;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.btn:hover {
+    background: #000000;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 60px 5px rgba(255, 255, 255, 0.9);
+}
+
+/*Alterações no Hero*/
+.hero {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-description {
+    color: #bbb;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/*Botões do Hero*/
+.hero-buttons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*Botão branco*/
+.button-white {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 20px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: solid #ffffff 2px;
+    font-weight: bold;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.button-white:hover {
+    background: #000000;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*Botão Roxo*/
+.button-purple {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 19px #ff00ff;
+    -moz-box-shadow: 0px 1px 19px #ff00ff;
+    box-shadow: 0px 1px 19px #ff00ff;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #000000;
+    padding: 10px 20px 10px 20px;
+    border: solid #dd00ff 2px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.button-purple:hover {
+    background: #dd00ff;
+    background-image: -webkit-linear-gradient(top, #dd00ff, #6f00ff);
+    background-image: -moz-linear-gradient(top, #dd00ff, #6f00ff);
+    background-image: -ms-linear-gradient(top, #dd00ff, #6f00ff);
+    background-image: -o-linear-gradient(top, #dd00ff, #6f00ff);
+    background-image: linear-gradient(to bottom, #dd00ff, #6f00ff);
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 1px 15px #ff00ff;
+}
+
+/*Aurora Hero Title*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+:root {
+    --bg: #000000;
+    --clr-1: #00c2ff;
+    --clr-2: #33ff8c;
+    --clr-3: #ffc640;
+    --clr-4: #e54cff;
+
+    --blur: 1rem;
+    --fs: clamp(3rem, 8vw, 7rem);
+    --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--bg);
+    color: #fff;
+    font-family: "Inter", "DM Sans", Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+*,
+*::before,
+*::after {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: var(--ls);
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+    margin-top: 8rem;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.aurora {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    mix-blend-mode: darken;
+    pointer-events: none;
+}
+
+.aurora__item {
+    overflow: hidden;
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    background-color: var(--clr-1);
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+    filter: blur(var(--blur));
+    mix-blend-mode: overlay;
+}
+
+.aurora__item:nth-of-type(1) {
+    top: -50%;
+    animation: aurora-border 6s ease-in-out infinite,
+        aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(2) {
+    background-color: var(--clr-3);
+    right: 0;
+    top: 0;
+    animation: aurora-border 6s ease-in-out infinite,
+        aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(3) {
+    background-color: var(--clr-2);
+    left: 0;
+    bottom: 0;
+    animation: aurora-border 6s ease-in-out infinite,
+        aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(4) {
+    background-color: var(--clr-4);
+    right: 0;
+    bottom: -50%;
+    animation: aurora-border 6s ease-in-out infinite,
+        aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: 100%;
+        right: 75%;
+    }
+
+    75% {
+        top: 100%;
+        right: 25%;
+    }
+
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes aurora-2 {
+    0% {
+        top: -50%;
+        left: 0%;
+    }
+
+    60% {
+        top: 100%;
+        left: 75%;
+    }
+
+    85% {
+        top: 100%;
+        left: 25%;
+    }
+
+    100% {
+        top: -50%;
+        left: 0%;
+    }
+}
+
+@keyframes aurora-3 {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+
+    40% {
+        bottom: 100%;
+        left: 75%;
+    }
+
+    65% {
+        bottom: 40%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@keyframes aurora-4 {
+    0% {
+        bottom: -50%;
+        right: 0;
+    }
+
+    50% {
+        bottom: 0%;
+        right: 40%;
+    }
+
+    90% {
+        bottom: 50%;
+        right: 25%;
+    }
+
+    100% {
+        bottom: -50%;
+        right: 0;
+    }
+}
+
+@keyframes aurora-border {
+    0% {
+        border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+    }
+
+    25% {
+        border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+    }
+
+    50% {
+        border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+    }
+
+    75% {
+        border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+    }
+
+    100% {
+        border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+    }
+}
+/*Seção explore o mundo*/
+.service {
+    background: #000;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 400px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #0d0d0d;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-color: white;
+    border-width: 10px;
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px;
+    color: #fff;
+}
+
+.about-title-h1 {
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: white;
+
+}
+
+.title-p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.veja-tudo {
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.veja-tudo:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: white;
+}
+
+.veja {
+    text-align: center;
+}
+
+/*Seção do Sobre Nós*/
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #FFFFFF;
+    margin-top: 50px;
+    background-color: #000;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #aaa;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    text-align: center;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+
+}
+
+/*Isso é o botão da sobre nós*/
+.lets-talk {
+    text-align: center;
+}
+
+/*Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10rem;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color:white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color:#007FFF;
+    bottom: 35px;
+    font-size: 14px;
+}

@@ -1,0 +1,198 @@
+/*1ª Seção - Hero*/
+#hero-container {
+    position: relative;
+}
+
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#p-hero {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #949494;
+}
+
+#descubra-btn {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+}
+
+/*2º Seção - Sobre Nós*/
+#about-h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+#experience {
+    margin-top: 4rem;
+}
+
+#inova {
+    margin-top: 4rem;
+}
+
+/*3ª Seção - Por que nos escolher*/
+#center-div {
+    text-align: center;
+}
+
+.h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 10px 0;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+/*4ª Seção - Nossos Números*/
+.custom-row {
+    display: flex;
+    justify-content: center;
+    /* Centraliza as colunas horizontalmente */
+    flex-wrap: wrap;
+    /* Quebra as colunas em várias linhas se necessário */
+}
+
+.column {
+    margin: 20px;
+    width: 15%;
+    padding: 50px;
+    text-align: center;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: transform 0.4s;
+}
+
+.column:hover {
+    transform: scale(1.1)
+}
+
+.column h2 {
+    margin-bottom: 10px;
+}
+
+.custom-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+/*5ª Seção - CTA/Call to action*/
+#center-div {
+    padding-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#center-div h1,
+#center-div p {
+    margin-bottom: 10px;
+}
+
+#center-div p {
+    margin-bottom: 40px;
+}
+
+.link {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+
+/*Seção Footer*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10rem;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #007FFF;
+    bottom: 35px;
+    font-size: 14px;
+}
