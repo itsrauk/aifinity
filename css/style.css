@@ -568,7 +568,7 @@ button:hover {
 }
 
 /*Footer*/
-footer{
+footer {
     position: relative;
     width: 100%;
     height: 14rem;
@@ -579,23 +579,27 @@ footer{
     justify-content: center;
     margin-bottom: -10rem;
 }
-footer p:nth-child(1){
+
+footer p:nth-child(1) {
     font-size: 30px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
 }
-footer p:nth-child(2){
-    color:white;
+
+footer p:nth-child(2) {
+    color: white;
     font-size: 17px;
     width: 500px;
     text-align: center;
     line-height: 26px;
 }
-.social{
+
+.social {
     display: flex;
 }
-.social a{
+
+.social a {
     width: 45px;
     height: 45px;
     display: flex;
@@ -609,13 +613,14 @@ footer p:nth-child(2){
     font-size: 20px;
 }
 
-.social a:hover{
+.social a:hover {
     transform: scale(1.3);
     transition: .3s;
 }
-.end{
+
+.end {
     position: absolute;
-    color:#007FFF;
+    color: #007FFF;
     bottom: 35px;
     font-size: 14px;
 }

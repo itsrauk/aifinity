@@ -1,0 +1,125 @@
+/* Primeira seção */
+#firstSection {
+    height: 100vh;
+    position: relative; /* Adiciona posicionamento relativo à primeira seção */
+}
+
+#centerDiv {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.h1Title {
+    font-size: 3.25rem;
+}
+
+.pText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.contentButton {
+    text-decoration: none;
+    padding: 15px 10px;
+    background-color: white;
+    border: solid white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.contentButton:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Segunda seção, o que é IA*/
+#about-h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+#experience {
+    margin-top: 4rem;
+}
+
+#inova {
+    margin-top: 4rem;
+}
+
+/*Terceira seção, tipos de IA, cards*/
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+.section-2 {
+    margin-top: -175px;
+    /*Diminui a margem entre as seções dos produtos*/
+}
+/*Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10rem;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color:white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color:#007FFF;
+    bottom: 35px;
+    font-size: 14px;
+}
